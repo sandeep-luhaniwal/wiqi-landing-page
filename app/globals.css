@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Urbanist:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #813699;
+  --color-primary-light: #B14ACB;
+  --color-primary-dark: #6A267A;
+  --color-white: #FFFFFF;
+  --color-background: #FAFAFA;
+  --color-main-black: #1F1F1F;
+
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
+
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+
+  --animate-gradient: gradient 3s ease infinite;
+  --background-size-200: 200% 200%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 100px;
+  }
+
+  * {
+    scroll-behavior: smooth !important;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    background-color: var(--color-background);
+    color: #1A1A1A;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-urbanist);
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .glass-dark {
+    background: rgba(134, 49, 153, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(134, 49, 153, 0.1);
+  }
+
+  .purple-gradient {
+    background: linear-gradient(135deg, #863199 0%, #B14ACB 100%);
+  }
+
+  .purple-glow {
+    box-shadow: 0 0 20px rgba(134, 49, 153, 0.3);
+  }
+
+  .purple-glow-hover:hover {
+    box-shadow: 0 0 30px rgba(134, 49, 153, 0.5);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #863199 0%, #B14ACB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse-slow {
+
+    0%,
+    100% {
+      opacity: 0.4;
+    }
+
+    50% {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #863199;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6A267A;
+}
+
+nextjs-portal,
+[data-nextjs-dialog-overlay],
+[data-nextjs-toast],
+.nextjs-toast-errors-parent {
+  display: none !important;
+}
