@@ -20,10 +20,10 @@ const Hero = () => {
             WiQi brings chat, calls, social posts, music, movies, games, books, shopping, ratings, and lifestyle services into one simple mobile experience.
           </Paragraph>
           <div className="flex gap-4 items-center">
-            <Link href={"/"}>
+            <Link target='_blank' href={"https://play.google.com/store/apps/details?id=com.wiqi.app"}>
               <Image src={"/assets/images/png/google-play.png"} alt='app store' width={150} height={56} className='h-12' />
             </Link>
-            <Link href={"/"}>
+            <Link target='_blank' href={"https://apps.apple.com/us/app/wiqi-application/id6746743906"}>
               <Image src={"/assets/images/png/apple-store.png"} alt='app store' width={150} height={56} className='h-12' />
             </Link>
           </div>

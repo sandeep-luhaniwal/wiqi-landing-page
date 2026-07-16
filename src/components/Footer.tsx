@@ -66,7 +66,7 @@ const Footer = () => {
   ]
 
   const contactLinks = [
-    { label: "support@wiqi.app", href: "mailto:support@wiqi.app" },
+    { label: "support@WiQi.net", href: "mailto:support@WiQi.net" },
     { label: "WiQi HQ, 123 Innovation Street, San Francisco, CA" },
   ]
 
@@ -185,10 +185,20 @@ const Footer = () => {
         <div className="py-10 border-b border-white/10">
           <h4 className="font-urbanist font-bold text-lg mb-5 text-white">Download WiQi</h4>
           <div className="flex gap-4 items-center">
-            <Link href={"/"} className="hover:opacity-90 transition-opacity">
+            <Link 
+              href={"https://play.google.com/store/apps/details?id=com.wiqi.app"} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-90 transition-opacity"
+            >
               <Image src={"/assets/images/png/google-play.png"} alt='Get it on Google Play' width={150} height={46} className='h-11 w-auto' />
             </Link>
-            <Link href={"/"} className="hover:opacity-90 transition-opacity">
+            <Link 
+              href={"https://apps.apple.com/us/app/wiqi-application/id6746743906"} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-90 transition-opacity"
+            >
               <Image src={"/assets/images/png/apple-store.png"} alt='Download on the App Store' width={150} height={46} className='h-11 w-auto' />
             </Link>
           </div>
