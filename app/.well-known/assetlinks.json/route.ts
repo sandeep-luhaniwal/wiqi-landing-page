@@ -7,11 +7,11 @@ export async function GET() {
       target: {
         namespace: "android_app",
         package_name: "com.wiqi.app",
-        sha256_cert_fingerprints: [
-          "0e:68:53:9f:3a:53:11:8d:2b:40:53:d7:f7:ad:5f:be:35:61:b4:0d:b0:28:31:4e:42:21:b6:1a:db:6a:f6:f5",
-          "b0:22:b8:85:5c:3d:31:15:a0:05:5d:0b:35:70:99:80:d8:f8:f6:6a:8b:f1:d6:84:9e:de:bd:d9:0a:7b:e2:55",
-          "a9:22:42:6d:fb:49:50:68:fb:97:a3:0a:77:f0:3c:15:5d:8e:19:26:8f:8b:87:a8:7e:2e:36:b4:12:62:60:63"
-        ]
+        sha256_cert_fingerprints:[
+        "0E:68:53:9F:3A:53:11:8D:2B:40:53:D7:F7:AD:5F:BE:35:61:B4:0D:B0:28:31:4E:42:21:B6:1A:DB:6A:F6:F5",
+        "B0:22:B8:85:5C:3D:31:15:A0:05:5D:0B:35:70:99:80:D8:F8:F6:6A:8B:F1:D6:84:9E:DE:BD:D9:0A:7B:E2:55",
+        "A9:22:42:6D:FB:49:50:68:FB:97:A3:0A:77:F0:3C:15:5D:8E:19:26:8F:8B:87:A8:7E:2E:36:B4:12:62:60:63"
+      ]
       }
     }
   ];
