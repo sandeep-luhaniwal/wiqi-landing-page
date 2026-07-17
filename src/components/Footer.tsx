@@ -206,7 +206,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="pt-8 text-center">
-          <p sm white className="opacity-80 center">
+          <p className="opacity-80 center">
             © {year} WiQi. SamPro Holding Limited.
           </p>
           {/* <Paragraph sm white className="opacity-80">Developed by  <Link href={"https://delaine.tech/"} target='_blank' className='hover:text-pink! hover:opacity-100'>Delaine</Link></Paragraph> */}
