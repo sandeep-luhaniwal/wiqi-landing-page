@@ -9,10 +9,10 @@ export async function GET() {
       apps: [],
       details: [
         {
-          appID: `${teamId}.${bundleId}`,
+          appID: [`${teamId}.${bundleId}`],
            "components": [
           {
-            "/": "/profile/*"
+            "/": "*"
           }
         ]
        
