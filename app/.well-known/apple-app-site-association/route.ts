@@ -5,20 +5,22 @@ export async function GET() {
   const bundleId = "com.wiqiapp.ios";
   
   const data = {
-    applinks: {
-      apps: [],
-      details: [
-        {
-          appID: [`${teamId}.${bundleId}`],
-           "components": [
+
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "CV294W9LH5.com.wiqiapp.ios"
+        ],
+        "components": [
           {
-            "/": "*"
+            "/": "/*"
           }
         ]
-       
-        }
-      ]
-    }
+      }
+    ]
+  }
+
   };
 
   return NextResponse.json(data);
