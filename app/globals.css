@@ -149,6 +149,10 @@
   background: #6A267A;
 }
 
+.center{
+  text-align:center !important;
+}
+
 nextjs-portal,
 [data-nextjs-dialog-overlay],
 [data-nextjs-toast],
