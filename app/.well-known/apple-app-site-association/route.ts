@@ -14,9 +14,8 @@ export async function GET() {
           {
             "/": "/profile/*"
           }
-        ],
-          paths: ["*", "/profile/",
-          "/api/profile/*"]
+        ]
+       
         }
       ]
     }
