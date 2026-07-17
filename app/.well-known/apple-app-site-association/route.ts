@@ -10,7 +10,8 @@ export async function GET() {
       details: [
         {
           appID: `${teamId}.${bundleId}`,
-          paths: ["*"]
+          paths: ["*", "/profile/",
+          "/api/profile/*"]
         }
       ]
     }
