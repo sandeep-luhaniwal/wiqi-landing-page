@@ -205,11 +205,11 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="pt-8 flex justify-between gap-3 flex-wrap">
+        <div className="pt-8 text-center">
           <Paragraph sm white className="opacity-80">
-            © {year} WiQi. All rights reserved.
+            © {year} WiQi. SamPro Holding Limited.
           </Paragraph>
-          <Paragraph sm white className="opacity-80">Developed by  <Link href={"https://delaine.tech/"} target='_blank' className='hover:text-pink! hover:opacity-100'>Delaine</Link></Paragraph>
+          {/* <Paragraph sm white className="opacity-80">Developed by  <Link href={"https://delaine.tech/"} target='_blank' className='hover:text-pink! hover:opacity-100'>Delaine</Link></Paragraph> */}
 
         </div>
       </div>
