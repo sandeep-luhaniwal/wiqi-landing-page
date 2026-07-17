@@ -10,6 +10,11 @@ export async function GET() {
       details: [
         {
           appID: `${teamId}.${bundleId}`,
+           "components": [
+          {
+            "/": "/profile/*"
+          }
+        ],
           paths: ["*", "/profile/",
           "/api/profile/*"]
         }
