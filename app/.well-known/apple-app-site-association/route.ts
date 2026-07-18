@@ -6,20 +6,19 @@ export async function GET() {
   
   const data = {
 
+ 
   "applinks": {
+    "apps": [],
     "details": [
       {
-        "appIDs": [
-          "CV294W9LH5.com.wiqiapp.ios"
-        ],
-        "components": [
-          {
-            "/": "/*"
-          }
+        "appID": "CV294W9LH5.com.wiqiapp.ios",
+        "paths": [
+          "*"
         ]
       }
     ]
   }
+
 
   };
 
