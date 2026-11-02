@@ -11,7 +11,7 @@ const Navbar = () => {
       const userAgent = window.navigator.userAgent || window.navigator.vendor || (window as any).opera;
       const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream;
       const isMac = /Macintosh|MacIntel|MacPPC|Mac68K/.test(userAgent);
-      
+
       if (isIOS || isMac) {
         setDownloadUrl("https://apps.apple.com/us/app/wiqi-application/id6746743906");
       } else {
@@ -28,12 +28,20 @@ const Navbar = () => {
           <Image src={"/assets/images/svg/main-logo.svg"} alt='wiqi logo' width={126} height={30} className='h-8 w-24 md:w-28' />
         </Link>
 
-        <div className="flex items-center gap-4">
-          <Link 
+        <div className="flex items-center gap-2.5 sm:gap-4">
+          <Link
+            href={"https://webapp.wiqi.net"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className='text-sm hover:bg-main-black md:text-base py-2 md:py-2.5 px-2 sm:px-4 rounded-full cursor-pointer font-medium bg-white text-primary hover:text-white border hover:border-black border-primary transition-colors duration-300'
+          >
+            Web Platform
+          </Link>
+          <Link
             href={downloadUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className='text-sm hover:bg-main-black md:text-base py-2 md:py-2.5 px-4 rounded-full cursor-pointer font-medium bg-primary text-white transition-colors duration-300'
+            className='text-sm hover:bg-main-black md:text-base py-2 md:py-2.5 px-2 sm:px-4 rounded-full cursor-pointer font-medium bg-primary text-white transition-colors duration-300'
           >
             Download WiQi
           </Link>

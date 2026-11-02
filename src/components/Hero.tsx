@@ -19,16 +19,19 @@ const Hero = () => {
           <Paragraph gray semibold lg className='pt-3 pb-4 md:pb-5 lg:pb-8'>
             WiQi brings chat, calls, social posts, music, movies, games, books, shopping, ratings, and lifestyle services into one simple mobile experience.
           </Paragraph>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center flex-wrap">
             <Link target='_blank' href={"https://play.google.com/store/apps/details?id=com.wiqi.app"}>
               <Image src={"/assets/images/png/google-play.png"} alt='app store' width={150} height={56} className='h-12' />
             </Link>
             <Link target='_blank' href={"https://apps.apple.com/us/app/wiqi-application/id6746743906"}>
               <Image src={"/assets/images/png/apple-store.png"} alt='app store' width={150} height={56} className='h-12' />
             </Link>
+            <Link target='_blank' href={"https://webapp.wiqi.net"}>
+              <Image src={"/assets/images/png/wiqi-web-one.png"} alt='app store' width={150} height={56} className='h-12' />
+            </Link>
           </div>
           <div className="pt-4 md:pt-5">
-            <Link 
+            <Link
               href={"#digitalword"}
               onClick={(e) => {
                 const element = document.getElementById('digitalword');
